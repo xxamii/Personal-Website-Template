@@ -5,39 +5,40 @@
     .card {
         width: 300px;
         margin-right: 20px;
-        padding-right: 20px;
+        padding-right: 10px;
 
         .card-head {
             margin-bottom: 30px;
             display: flex;
 
             .icon {
-                width: 75px;
+                width: 85px;
                 height: 45px;
                 display: block;
                 margin-right: 20px;
             }
 
             .i1 {
-                background: url('../../../images/Home/search-icon.png') no-repeat 7px 0;
+                background: url('../../../../images/Home/search-icon.png') no-repeat 7px 0;
             }
             .i2 {
-                background: url('../../../images/Home/star-icon.png') no-repeat 7px 0;
+                background: url('../../../../images/Home/star-icon.png') no-repeat 7px 0;
             }
             .i3 {
-                background: url('../../../images/Home/message-icon.png') no-repeat 7px 2px;
+                background: url('../../../../images/Home/message-icon.png') no-repeat 7px 2px;
                 background-size: 43px 41px;
+                margin-right: 32px;
             }
 
             h3 {
-                font-size: 24px;
-                font-weight: 400;
+                font-size: 25px;
+                font-weight: 600;
             }
         }
 
         .card-body {
             margin-bottom: 40px;
-            font-size: 16px;
+            line-height: normal;
         }
 
         .card-link {
@@ -50,7 +51,7 @@
                 width: 17px;
                 height: 9px;
                 display: block;
-                background: url('../../../images/Home/more-icon.png') no-repeat center;
+                background: url('../../../../images/Home/more-icon.png') no-repeat center;
                 margin-right: 10px;
             }
 

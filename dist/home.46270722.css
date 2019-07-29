@@ -34,7 +34,7 @@
   box-sizing: border-box;
 }
 
-header, main, footer {
+header, main, .footer {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 10px;
@@ -220,7 +220,6 @@ header nav .navigation .nav-item:last-child {
   font-weight: 400;
   margin: 0;
   padding: 0;
-  font-size: 15px;
   line-height: 1.3;
 }
 
@@ -231,7 +230,7 @@ header nav .navigation .nav-item:last-child {
 .project-cards .card {
   width: 300px;
   margin-right: 20px;
-  padding-right: 20px;
+  padding-right: 10px;
 }
 .project-cards .card .card-head {
   margin-bottom: 30px;
@@ -255,12 +254,11 @@ header nav .navigation .nav-item:last-child {
   margin-right: 32px;
 }
 .project-cards .card .card-head h3 {
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 600;
 }
 .project-cards .card .card-body {
   margin-bottom: 40px;
-  font-size: 15px;
   line-height: normal;
 }
 .project-cards .card .card-link {
@@ -330,11 +328,11 @@ header nav .navigation .nav-item:last-child {
 }
 .latest-work .work-cards .card .card-content h5 {
   padding-bottom: 18px;
+  font-size: 19px;
 }
 .latest-work .work-cards .card .card-content p {
   margin-bottom: 18px;
   line-height: normal;
-  font-size: 15px;
 }
 .latest-work .work-cards .card .card-content .card-link {
   font-family: "Bebas";
@@ -360,4 +358,28 @@ header nav .navigation .nav-item:last-child {
   transform: scale(1.1);
 }
 
-/*# sourceMappingURL=/home.b54fdca9.css.map */
+footer {
+  background-color: #f6f6f6;
+}
+footer .footer-border {
+  height: 5px;
+  width: 100%;
+  background: url("/footer-border.ee48da26.png") no-repeat center center;
+}
+footer .footer {
+  padding: 24px 0 37px 0;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer p {
+  font-size: 15px;
+  color: #9a9a9a;
+}
+footer .footer p span, footer .footer p a {
+  color: #6e6e6e;
+}
+footer .footer p a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=/home.46270722.css.map */

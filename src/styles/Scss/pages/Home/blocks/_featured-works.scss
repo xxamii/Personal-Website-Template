@@ -80,7 +80,7 @@
     .description {
         width: 100%;
         padding: 17px 0 20px 16px;
-        background: url('../../../images/Home/Description-bg.png') no-repeat center center;
+        background: url('../../../../images/Home/Description-bg.png') no-repeat center center;
         background-size: cover;
 
         h4 {
@@ -90,10 +90,9 @@
         }
 
         p {
-            font-weight: 500;
+            font-weight: 400;
             margin: 0;
             padding: 0;
-            font-size: 15px;
             line-height: 1.3;
         }
     }

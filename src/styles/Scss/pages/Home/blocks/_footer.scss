@@ -1,0 +1,30 @@
+footer {  
+    background-color: #f6f6f6;
+
+    .footer-border {
+        height: 5px;
+        width: 100%;
+        background: url('../../../../images/Home/footer-border.png') no-repeat center center;
+    }
+
+    .footer {
+        padding: 24px 0 37px 0;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            font-size: 15px;
+            color: $grey;
+
+            span,a {
+                color: #6e6e6e;
+            }
+
+            a {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

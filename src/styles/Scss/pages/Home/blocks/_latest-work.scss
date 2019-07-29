@@ -1,0 +1,96 @@
+.latest-work {
+    padding: 0 0 70px 0;
+
+    .work-head {
+        width: 100%;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 55px;
+        background: url('../../../../images/Home/Header-Background.png') no-repeat center center;
+        background-size: cover;
+
+        h3 {
+            box-sizing: content-box;
+            padding: 0 30px;
+            display: inline-block;
+            margin: 0 auto;
+            height: 100%;
+            line-height: 48px;
+            background-color: $white;
+        }
+    }
+
+    .work-cards {
+        display: flex;
+
+        .card {
+            width: 220px;
+            margin-right: 20px;
+
+            .card-img {
+                width: 100%;
+                height: 120px;
+                border: 2px solid #f0f0f0;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            
+            .card-content {
+                width: 100%;
+                padding: 18px 4px 0 2px;
+
+                h5 {
+                    padding-bottom: 18px;
+                    font-size: 19px
+                }
+
+                p {
+                    margin-bottom: 18px;
+                    line-height: normal;
+                }
+
+                .card-link {
+                    font-family: 'Bebas';
+                    font-size: 17px;
+                    display: flex;
+                    align-items: center;
+        
+                    .arrow-icon {
+                        width: 17px;
+                        height: 9px;
+                        display: block;
+                        background: url('../../../../images/Home/more-icon.png') no-repeat center;
+                        margin-right: 10px;
+                        transition: all 0.15s ease-in-out;
+                    }
+        
+                    &:hover {
+                        .arrow-icon {
+                            transform: translateX(3px);
+                        }
+                    }
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover {
+                .card-img {
+            
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}   

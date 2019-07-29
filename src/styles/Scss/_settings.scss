@@ -7,33 +7,33 @@ $white: #fff;
 
 @font-face {
     font-family: 'Pacifico';
-    src: url('../../../fonts/Pacifico/Pacifico-Regular.ttf');
+    src: url('../../../../fonts/Pacifico/Pacifico-Regular.ttf');
     font-weight: 400;
 }
 @font-face {
     font-family: 'Bebas';
-    src: url('../../../fonts/Bebas/Bebas-Regular.otf'),
-         url('../../../fonts/Bebas/Bebas-Regular.ttf');
+    src: url('../../../../fonts/Bebas/Bebas-Regular.otf'),
+         url('../../../../fonts/Bebas/Bebas-Regular.ttf');
     font-weight: 400;
 }
 @font-face {
     font-family: 'Roboto';
-    src: url('../../../fonts/Roboto/Roboto-Light.ttf');
+    src: url('../../../../fonts/Roboto/Roboto-Light.ttf');
     font-weight: 300;
 }
 @font-face {
     font-family: 'Roboto';
-    src: url('../../../fonts/Roboto/Roboto-Medium.ttf');
+    src: url('../../../../fonts/Roboto/Roboto-Medium.ttf');
     font-weight: 500;
 }
 @font-face {
     font-family: 'Roboto';
-    src: url('../../../fonts/Roboto/Roboto-Regular.ttf');
+    src: url('../../../../fonts/Roboto/Roboto-Regular.ttf');
     font-weight: 400;
 }
 @font-face {
     font-family: 'Roboto';
-    src: url('../../../fonts/Roboto/Roboto-RegularItalic.ttf');
+    src: url('../../../../fonts/Roboto/Roboto-RegularItalic.ttf');
     font-weight: 400;
 }
 
@@ -43,7 +43,7 @@ $white: #fff;
     box-sizing: border-box;
 }
 
-header,main,footer {
+header,main,.footer {
     max-width: 960px;
     margin: 0 auto;
     padding: 0 10px;
