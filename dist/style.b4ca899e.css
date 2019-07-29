@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Bebas";
+  src: url("/Bebas-Regular.1591e4a9.otf"), url("/Bebas-Regular.3c45d0a4.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Pacifico";
+  src: url("/Pacifico-Regular.36d066d1.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Bebas";
+  src: url("/Bebas-Regular.1591e4a9.otf"), url("/Bebas-Regular.3c45d0a4.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/Roboto-Light.01a1ea02.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/Roboto-Medium.e0ccafc4.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/Roboto-Regular.2c995fc2.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/Roboto-RegularItalic.1c0e9d0f.ttf");
+  font-weight: 400;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header, main, footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+body {
+  color: #474747;
+}
+
+a {
+  text-decoration: none;
+  color: #474747;
+}
+
+p {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h3, h4, h5 {
+  font-family: "Bebas", sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=/style.b4ca899e.css.map */

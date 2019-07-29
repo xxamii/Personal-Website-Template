@@ -1,0 +1,69 @@
+.project-cards {
+    display: flex;
+    padding: 0 0 70px 0;
+
+    .card {
+        width: 300px;
+        margin-right: 20px;
+        padding-right: 20px;
+
+        .card-head {
+            margin-bottom: 30px;
+            display: flex;
+
+            .icon {
+                width: 75px;
+                height: 45px;
+                display: block;
+                margin-right: 20px;
+            }
+
+            .i1 {
+                background: url('../../../images/Home/search-icon.png') no-repeat 7px 0;
+            }
+            .i2 {
+                background: url('../../../images/Home/star-icon.png') no-repeat 7px 0;
+            }
+            .i3 {
+                background: url('../../../images/Home/message-icon.png') no-repeat 7px 2px;
+                background-size: 43px 41px;
+            }
+
+            h3 {
+                font-size: 24px;
+                font-weight: 400;
+            }
+        }
+
+        .card-body {
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+
+        .card-link {
+            font-family: 'Bebas';
+            font-size: 17px;
+            display: flex;
+            align-items: center;
+
+            .arrow-icon {
+                width: 17px;
+                height: 9px;
+                display: block;
+                background: url('../../../images/Home/more-icon.png') no-repeat center;
+                margin-right: 10px;
+            }
+
+            &:hover {
+                .arrow-icon {
+                    transition: all 0.15s;
+                    transform: translateX(3px);
+                }
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

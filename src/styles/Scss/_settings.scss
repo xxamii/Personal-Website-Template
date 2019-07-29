@@ -1,0 +1,50 @@
+$black: #474747;
+$grey: #9a9a9a;
+$lightgrey: #a5a5a5;
+$darkgrey: #656565;
+$white: #fff;
+
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('../../../fonts/Pacifico/Pacifico-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Bebas';
+    src: url('../../../fonts/Bebas/Bebas-Regular.otf'),
+         url('../../../fonts/Bebas/Bebas-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../../fonts/Roboto/Roboto-Light.ttf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../../fonts/Roboto/Roboto-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../../fonts/Roboto/Roboto-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../../fonts/Roboto/Roboto-RegularItalic.ttf');
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,main,footer {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+}

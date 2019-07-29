@@ -1,0 +1,45 @@
+body {
+    color: $black;
+    border-top: 7px solid #ececec; 
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+    line-height: 1;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+}
+
+h1,h3,h4,h5 {
+    font-family: 'Bebas', sans-serif;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+h5 {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
