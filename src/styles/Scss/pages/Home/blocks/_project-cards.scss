@@ -12,23 +12,19 @@
             display: flex;
 
             .icon {
-                width: 85px;
-                height: 45px;
                 display: block;
-                margin-right: 20px;
+                position: relative;
+                margin-right: 30px;
+
+                img {
+                    object-fit: none;
+                    position: relative;
+                    top: 1px;
+                    left: 6px;
+                }
             }
 
-            .i1 {
-                background: url('../../../../images/Home/search-icon.png') no-repeat 7px 0;
-            }
-            .i2 {
-                background: url('../../../../images/Home/star-icon.png') no-repeat 7px 0;
-            }
-            .i3 {
-                background: url('../../../../images/Home/message-icon.png') no-repeat 7px 2px;
-                background-size: 43px 41px;
-                margin-right: 32px;
-            }
+
 
             h3 {
                 font-size: 25px;

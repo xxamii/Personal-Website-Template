@@ -17,6 +17,23 @@ header {
            bottom: 6px;
        }
 
+       .hamburger {
+           display: none;
+
+           span {
+               display: block;
+               width: 20px;
+               height: 3px;
+               background-color: $black;
+               margin-bottom: 2px;
+               cursor: pointer;
+
+               &:last-child {
+                   margin-bottom: 0;
+               }
+           }
+       }
+
        .navigation {
            display: flex;
            align-items: flex-end;
