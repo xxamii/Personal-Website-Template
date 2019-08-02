@@ -118,7 +118,51 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"src/scripts/script_home.js":[function(require,module,exports) {
+function slider() {
+  var slides = document.querySelectorAll('.slide-picture');
+  var indicators = document.querySelectorAll('.slider-indicator');
+  var title = document.querySelector('.img-title');
+  var descr = document.querySelector('.img-desc');
 
+  function reset() {
+    slides.forEach(function (el) {
+      el.classList.remove('current');
+    });
+    indicators.forEach(function (el) {
+      el.classList.remove('active');
+    });
+  }
+
+  indicators.forEach(function (el) {
+    el.addEventListener('click', function () {
+      reset();
+      var cur = el.dataset.slideTo;
+      var curSlide = slides[cur];
+      var curImg = curSlide.children[0];
+      var head = curImg.dataset.header;
+      var desc = curImg.dataset.description;
+      el.classList.add('active');
+      curSlide.classList.add('current');
+      title.textContent = head;
+      descr.textContent = desc;
+    });
+  });
+}
+
+function navbar() {
+  var nav = document.querySelector('.navigation');
+  var hamburger = document.querySelector('.hamburger');
+  hamburger.addEventListener('click', function () {
+    nav.classList.toggle('show');
+  });
+}
+
+function app() {
+  slider();
+  navbar();
+}
+
+app();
 },{}],"C:/Users/SkelleRoznik/AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -147,7 +191,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52843" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56935" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

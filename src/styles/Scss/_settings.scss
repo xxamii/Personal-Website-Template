@@ -31,11 +31,11 @@ $white: #fff;
     src: url('../../../../fonts/Roboto/Roboto-Regular.ttf');
     font-weight: 400;
 }
-@font-face {
-    font-family: 'Roboto';
-    src: url('../../../../fonts/Roboto/Roboto-RegularItalic.ttf');
-    font-weight: 400;
-}
+// @font-face {
+//     font-family: 'Roboto';
+//     src: url('../../../../fonts/Roboto/Roboto-RegularItalic.ttf');
+//     font-weight: 400;
+// }
 
 * {
     margin: 0;
@@ -47,4 +47,11 @@ header,main,.footer {
     max-width: 960px;
     margin: 0 auto;
     padding: 0 10px;
+}
+
+@media screen and (max-width: 481px) {
+
+    body {
+        min-width: 320px;
+    }
 }

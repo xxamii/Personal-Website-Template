@@ -23,11 +23,6 @@
   src: url("/Roboto-Regular.2c995fc2.ttf");
   font-weight: 400;
 }
-@font-face {
-  font-family: "Roboto";
-  src: url("/Roboto-RegularItalic.1c0e9d0f.ttf");
-  font-weight: 400;
-}
 * {
   margin: 0;
   padding: 0;
@@ -40,6 +35,11 @@ header, main, .footer {
   padding: 0 10px;
 }
 
+@media screen and (max-width: 481px) {
+  body {
+    min-width: 320px;
+  }
+}
 body {
   color: #474747;
   border-top: 7px solid #ececec;
@@ -161,6 +161,8 @@ header nav .navigation .nav-item:last-child {
   position: relative;
   width: 100%;
   height: 423px;
+  display: none;
+  background-color: #656565;
 }
 .featured-works .works-slider .slide-picture .title {
   padding: 14px 17px 10px 17px;
@@ -194,6 +196,10 @@ header nav .navigation .nav-item:last-child {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: left top;
+}
+.featured-works .works-slider .current {
+  display: block;
 }
 .featured-works .works-slider .slider-indicators {
   position: absolute;
@@ -220,7 +226,7 @@ header nav .navigation .nav-item:last-child {
 }
 .featured-works .description {
   width: 100%;
-  padding: 17px 0 20px 16px;
+  padding: 17px 10px 20px 16px;
   background: url("/Description-bg.990feb55.png") no-repeat center center;
   background-size: cover;
 }
@@ -413,16 +419,16 @@ footer .footer p a:hover {
   header nav .navigation {
     position: absolute;
     height: 100vh;
-    width: 50%;
+    width: 50vw;
     left: -10px;
-    top: -5px;
+    top: -7px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #656565;
-    transition: translate 0.3s;
     z-index: 99999;
     transform: translateX(-100%);
+    transition: all 0.3s;
   }
   header nav .navigation .nav-item {
     margin: 0 0 20px 0;
@@ -436,6 +442,9 @@ footer .footer p a:hover {
   }
   header nav .navigation .nav-item:last-child {
     margin: 0;
+  }
+  header nav .show {
+    transform: translateX(0%);
   }
   header nav .hamburger {
     display: block;
@@ -472,7 +481,7 @@ footer .footer p a:hover {
     flex-direction: column;
   }
   .project-cards .card .card-head .icon {
-    margin: 0 0 15px 0;
+    margin: 0 0 20px 0;
     position: static;
   }
   .project-cards .card .card-head .icon img {
@@ -539,6 +548,27 @@ footer .footer p a:hover {
   }
   footer .footer p:last-child {
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 481px) {
+  .featured-works .works-slider .slide-picture {
+    height: 230px;
+  }
+  .featured-works .works-slider .slide-picture .title {
+    display: none;
+  }
+  .featured-works .works-slider .slider-indicators {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  footer .footer p, footer .footer span, footer .footer a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .featured-works .works-slider .slide-picture {
+    height: 180px;
   }
 }
 
