@@ -36,6 +36,7 @@ function navbar() {
 
     hamburger.addEventListener('click' , () => {
         nav.classList.toggle('show');
+        hamburger.classList.toggle('opened');
     })
 }
 

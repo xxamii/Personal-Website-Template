@@ -117,38 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"src/scripts/script_home.js":[function(require,module,exports) {
-function slider() {
-  var slides = document.querySelectorAll('.slide-picture');
-  var indicators = document.querySelectorAll('.slider-indicator');
-  var title = document.querySelector('.img-title');
-  var descr = document.querySelector('.img-desc');
-
-  function reset() {
-    slides.forEach(function (el) {
-      el.classList.remove('current');
-    });
-    indicators.forEach(function (el) {
-      el.classList.remove('active');
-    });
-  }
-
-  indicators.forEach(function (el) {
-    el.addEventListener('click', function () {
-      reset();
-      var cur = el.dataset.slideTo;
-      var curSlide = slides[cur];
-      var curImg = curSlide.children[0];
-      var head = curImg.dataset.header;
-      var desc = curImg.dataset.description;
-      el.classList.add('active');
-      curSlide.classList.add('current');
-      title.textContent = head;
-      descr.textContent = desc;
-    });
-  });
-}
-
+})({"src/scripts/script_about.js":[function(require,module,exports) {
 function navbar() {
   var nav = document.querySelector('.navigation');
   var hamburger = document.querySelector('.hamburger');
@@ -159,7 +128,6 @@ function navbar() {
 }
 
 function app() {
-  slider();
   navbar();
 }
 
@@ -367,5 +335,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["C:/Users/SkelleRoznik/AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js","src/scripts/script_home.js"], null)
-//# sourceMappingURL=/script_home.320bcefd.js.map
+},{}]},{},["C:/Users/SkelleRoznik/AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js","src/scripts/script_about.js"], null)
+//# sourceMappingURL=/script_about.ba5f5444.js.map

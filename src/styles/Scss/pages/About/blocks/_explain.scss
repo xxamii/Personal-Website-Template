@@ -1,0 +1,20 @@
+.about {
+    padding-top: 70px;
+
+    h1 {
+        padding: 0 0 15px 0;
+    }
+    p {
+        font-family: 'Roboto';
+        font-style: italic;
+        line-height: 1.6;
+        color: $grey;
+        margin-bottom: 10px;
+    }
+
+    .border-bottom {
+        height: 5px;
+        width: 100%;
+        background: url('../../../../images/About/bb.png');
+    }
+}

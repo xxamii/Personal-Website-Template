@@ -1,0 +1,21 @@
+//basic settings
+@import '../../settings';
+@import '../../ui';
+
+//navbar styles
+@import '../Common_blocks/navbar';
+
+//about styles
+@import './blocks/explain';
+
+//principes styles
+@import './blocks/principles';
+
+//staff styles
+@import './blocks/staff';
+
+//footer styles
+@import '../Common_blocks/footer';
+
+//mediaqueries
+@import './mediaqueries';

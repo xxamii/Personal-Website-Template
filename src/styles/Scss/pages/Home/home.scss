@@ -4,7 +4,7 @@
 
 
 //navbar styles
-@import './blocks/navbar';
+@import '../Common_blocks/navbar';
 
 //featured-works styles
 @import './blocks/featured-works';
@@ -16,7 +16,7 @@
 @import './blocks/latest-work';
 
 //footer styles
-@import './blocks/footer';
+@import '../Common_blocks/footer';
 
 //mediaqueries
 @import './mediaqueries';
