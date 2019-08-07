@@ -1,0 +1,32 @@
+//basic settings
+@import '../../settings';
+@import '../../ui';
+
+//navbar styles
+@import '../common_blocks/navbar';
+
+//about styles
+@import '../common_blocks/explain';
+
+//projects section styles
+@import './blocks/projects-section';
+
+//sidebar styles
+@import '../common_blocks/sidebar';
+
+//footer styles
+@import '../common_blocks/footer';
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 20px;
+
+    .content {
+        max-width: 700px;
+        padding-right: 30px;
+    }
+}
+
+//mediaqueries
+@import './mediaqueries';

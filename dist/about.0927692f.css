@@ -48,6 +48,8 @@ header, main, .footer {
 body {
   color: #474747;
   border-top: 7px solid #ececec;
+  background: url("/Body-Background.2691fdb2.png") no-repeat center center;
+  background-size: cover;
 }
 
 a {
@@ -187,11 +189,12 @@ header nav .navigation .current .arrow {
   line-height: 1.6;
   color: #9a9a9a;
   margin-bottom: 10px;
+  font-size: 15px;
 }
 .about .border-bottom {
   height: 5px;
   width: 100%;
-  background: url("/bb.68916fb3.png");
+  background: url("/bb.84adad28.png");
 }
 
 .principles {
@@ -272,7 +275,7 @@ footer {
 footer .footer-border {
   height: 5px;
   width: 100%;
-  background: url("/footer-border.ee48da26.png") no-repeat center center;
+  background: url("/footer-border.86a03c64.png") no-repeat center center;
 }
 footer .footer {
   padding: 24px 10px 37px 10px;

@@ -1,4 +1,6 @@
-function slider() {
+import {navbar} from './elements/navbar';
+
+function imageSlider() {
     const slides = document.querySelectorAll('.slide-picture');
     const indicators = document.querySelectorAll('.slider-indicator');
     const title = document.querySelector('.img-title');
@@ -30,18 +32,8 @@ function slider() {
     })
 }
 
-function navbar() {
-    const nav = document.querySelector('.navigation');
-    const hamburger = document.querySelector('.hamburger');
-
-    hamburger.addEventListener('click' , () => {
-        nav.classList.toggle('show');
-        hamburger.classList.toggle('opened');
-    })
-}
-
 function app() {
-    slider()
+    imageSlider()
     navbar()
 }
 

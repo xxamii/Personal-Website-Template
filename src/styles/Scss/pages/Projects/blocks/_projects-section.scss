@@ -1,0 +1,176 @@
+.projects{
+    padding: 20px 0 75px 0;
+
+    .projects-types {
+        display: flex;
+        
+        li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-family: 'Bebas';
+            font-size: 18px;
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+
+            &::after {
+                content: '';
+                display: inline-block;
+                height: 14px;
+                width: 2px;
+                margin: 0 10px;
+                background-color: $black;
+                position: relative;
+                bottom: 0;
+            }
+
+            &:last-child {
+
+                &::after {
+                    height: 0;
+                    margin: 0;
+                    width: 0;
+                }
+            }
+        }
+
+        .active {
+            color: $lightgrey;
+        }
+    }
+
+    .work {
+        padding: 35px 0 0 0;
+        display: flex;
+
+        .column {
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .item {
+                max-width: 210px;
+                margin-bottom: 15px;
+
+                .img {
+                    max-height: 335px;
+                    min-height: 240px;
+                    overflow: hidden;
+                    position: relative;
+                    
+
+                    img {
+                        object-fit: cover;
+                        display: inline;
+                        vertical-align: bottom;
+                    }
+
+                    .overlay {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0 , 0 , 0 , 0.75);
+                        opacity: 0;
+                        transition: all 0.3s;
+                        z-index: 999;
+
+                        .view-more {
+                            display: inline-block;
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50% , -50%);
+                            width: 70px;
+                            height: 70px;
+                            border-radius: 6px;
+                            background: #808080;
+                            color: #202020;
+
+                            i {
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50% , -50%);
+                            }
+                        }
+                    }
+
+                    &::before {
+                        transition: all 0.3s;
+                    }
+                } 
+
+                .item-body {
+                    padding: 16px 12px 19px 15px;
+                    border: 1px solid #f8f8f8;
+                    border-top: none;
+
+                    h4 {
+                        padding-bottom: 5px;
+                        font-size: 21px;
+                    }
+                    .subtitle {
+                        font-family: 'Bebas';
+                        font-size: 17px;
+                        color: #939393;
+                        padding-bottom: 25px;
+                    }
+                }
+
+                &:hover {
+                    .img {
+                        cursor: pointer;
+
+                        .overlay {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+            .i4 {
+                .img {
+                    img {
+                        object-position: -165px -30px;
+                    }
+                }
+            }
+
+            .i2 {
+                .img {
+                    img {
+                        object-position: -250px -90px;
+                    }
+                }
+            }
+
+            .i3 {
+                .img {
+                    img {
+                        object-position: -56px 0;
+                    }
+                }
+            }
+
+            .i5 {
+                .img {
+                    img {
+                        object-position: -320px 0;
+                    }
+                }
+            }
+
+            .i6 {
+                .img {
+                    img {
+                        object-position: -145px 0;
+                    }
+                }
+            }
+        }
+    }
+}

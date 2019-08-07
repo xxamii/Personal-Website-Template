@@ -74,6 +74,18 @@
                         margin: 0;
                     }
                 }
+
+                .current {
+
+                    .arrow {
+                        display: none;
+                    }
+
+                    .nav-item-head {
+                        font-size: 20px;
+                        color: $grey;
+                    }
+                }
             }
 
             .show {

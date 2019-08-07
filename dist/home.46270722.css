@@ -48,6 +48,8 @@ header, main, .footer {
 body {
   color: #474747;
   border-top: 7px solid #ececec;
+  background: url("/Body-Background.2691fdb2.png") no-repeat center center;
+  background-size: cover;
 }
 
 a {
@@ -409,7 +411,7 @@ footer {
 footer .footer-border {
   height: 5px;
   width: 100%;
-  background: url("/footer-border.ee48da26.png") no-repeat center center;
+  background: url("/footer-border.86a03c64.png") no-repeat center center;
 }
 footer .footer {
   padding: 24px 10px 37px 10px;
@@ -475,6 +477,13 @@ footer .footer p a:hover {
   }
   header nav .navigation .nav-item:last-child {
     margin: 0;
+  }
+  header nav .navigation .current .arrow {
+    display: none;
+  }
+  header nav .navigation .current .nav-item-head {
+    font-size: 20px;
+    color: #9a9a9a;
   }
   header nav .show {
     transform: translateX(0%);

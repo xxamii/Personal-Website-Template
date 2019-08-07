@@ -3,10 +3,10 @@
 @import '../../ui';
 
 //navbar styles
-@import '../Common_blocks/navbar';
+@import '../common_blocks/navbar';
 
 //about styles
-@import './blocks/explain';
+@import '../common_blocks/explain';
 
 //principes styles
 @import './blocks/principles';
@@ -15,7 +15,7 @@
 @import './blocks/staff';
 
 //footer styles
-@import '../Common_blocks/footer';
+@import '../common_blocks/footer';
 
 //mediaqueries
 @import './mediaqueries';
