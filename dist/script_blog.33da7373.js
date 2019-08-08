@@ -133,13 +133,37 @@ function navbar() {
     hamburger.classList.toggle('opened');
   });
 }
-},{}],"src/scripts/script_about.js":[function(require,module,exports) {
+},{}],"src/scripts/script_blog.js":[function(require,module,exports) {
 "use strict";
 
 var _navbar = require("./elements/navbar");
 
+function blogPageTransition() {
+  var pages = document.querySelectorAll('.posts-page');
+  var indicators = document.querySelectorAll('.pages-indicator');
+
+  function reset() {
+    pages.forEach(function (el) {
+      el.style.display = 'none';
+    });
+    indicators.forEach(function (el) {
+      el.classList.remove('active');
+    });
+  }
+
+  indicators.forEach(function (i) {
+    i.addEventListener('click', function () {
+      reset();
+      var current = i.dataset.openedPage;
+      i.classList.add('active');
+      pages[current].style.display = 'block';
+    });
+  });
+}
+
 function app() {
   (0, _navbar.navbar)();
+  blogPageTransition();
 }
 
 app();
@@ -346,5 +370,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["C:/Users/SkelleRoznik/AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js","src/scripts/script_about.js"], null)
-//# sourceMappingURL=/script_about.ba5f5444.js.map
+},{}]},{},["C:/Users/SkelleRoznik/AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js","src/scripts/script_blog.js"], null)
+//# sourceMappingURL=/script_blog.33da7373.js.map
