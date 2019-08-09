@@ -1,0 +1,70 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 240px 0;
+
+    input,textarea {
+        padding: 10px;
+        color: $black;
+        background-color: #fafafa;
+        border: 1px solid #eeeeee;
+        font-family: 'Bebas';
+        font-size: 17px;
+        font-weight: 400;
+
+        &::placeholder {
+            color: #c6c6c6;
+        }
+    }
+
+    input {
+        margin-bottom: 10px;
+        max-width: 220px;
+    }
+    
+    textarea {
+        max-width: 495px;
+        height: 205px;
+        resize: none;
+        margin-bottom: 15px;
+    }
+
+    .submit {
+        font-family: 'Bebas';
+        font-size: 17px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border: 1px solid transparent;
+        background-color: transparent;
+        color: $black;
+        max-width: 72px;
+
+        .arrow-icon {
+            width: 17px;
+            height: 9px;
+            display: block;
+            background: url('../../../../images/Contact/more-icon.png') no-repeat center;
+            margin-right: 10px;
+        }
+
+        &:hover {
+            .arrow-icon {
+                transition: all 0.15s;
+                transform: translateX(3px);
+            }
+        }
+    }
+
+    .validate-err {
+        padding: 2px 0 15px 0;
+        color: #db5353;
+        font-size: 14px;
+    }
+
+    .validate-pass {
+        padding-bottom: 15px;
+        color: #6dd689;
+        font-size: 14px;
+    }
+}

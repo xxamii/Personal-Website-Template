@@ -133,35 +133,32 @@ function navbar() {
     hamburger.classList.toggle('opened');
   });
 }
-},{}],"src/scripts/script_projects.js":[function(require,module,exports) {
+},{}],"src/scripts/script_contact.js":[function(require,module,exports) {
 "use strict";
 
 var _navbar = require("./elements/navbar");
 
-function chooseCategory() {
-  var types = document.querySelectorAll('.type');
-  var items = document.querySelectorAll('.item');
+function validation() {
+  var inputs = document.forms[0].getElementsByTagName('input');
+  Array.prototype.forEach.call(inputs, function (el) {
+    el.addEventListener('blur', function () {
+      var val = el.value;
+      var message = document.createElement('p');
 
-  function reset() {
-    items.forEach(function (i) {
-      i.style.display = 'none';
-    });
-  }
-
-  types.forEach(function (e) {
-    e.addEventListener('click', function () {
-      var type = e.dataset.type;
-      var elements = document.querySelectorAll(".".concat(type));
-
-      if (type == 'all') {
-        items.forEach(function (i) {
-          i.style.display = 'block';
-        });
+      if (val == '') {
+        message.classList.add('validate-err');
+        message.innerText += 'Fill in the form, please.';
+        el.parentNode.insertBefore(message, el.nextSibling);
+        setTimeout(function () {
+          message.remove();
+        }, 4000);
       } else {
-        reset();
-        elements.forEach(function (el) {
-          el.style.display = 'block';
-        });
+        message.classList.add('validate-pass');
+        message.innerText += 'Fine.';
+        el.parentNode.insertBefore(message, el.nextSibling);
+        setTimeout(function () {
+          message.remove();
+        }, 4000);
       }
     });
   });
@@ -169,7 +166,7 @@ function chooseCategory() {
 
 function app() {
   (0, _navbar.navbar)();
-  chooseCategory();
+  validation();
 }
 
 app();
@@ -376,5 +373,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["C:/Users/SkelleRoznik/AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js","src/scripts/script_projects.js"], null)
-//# sourceMappingURL=/script_projects.16aa7054.js.map
+},{}]},{},["C:/Users/SkelleRoznik/AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js","src/scripts/script_contact.js"], null)
+//# sourceMappingURL=/script_contact.9e5116c9.js.map
