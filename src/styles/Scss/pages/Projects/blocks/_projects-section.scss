@@ -45,14 +45,17 @@
         display: flex;
 
         .column {
-            margin-right: 20px;
+            
             &:last-child {
-                margin-right: 0;
+                .item {
+                    margin-right: 0;
+                }
             }
 
             .item {
                 max-width: 210px;
                 margin-bottom: 15px;
+                margin-right: 20px;
 
                 .img {
                     max-height: 335px;

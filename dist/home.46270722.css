@@ -433,15 +433,6 @@ footer .footer p a:hover {
   header nav .navigation .nav-item {
     margin-right: 30px;
   }
-
-  .project-cards .card .card-head .icon {
-    margin-right: 20px;
-  }
-  .project-cards .card .card-head .icon img {
-    height: auto;
-    object-fit: contain;
-    max-width: 38px;
-  }
 }
 @media screen and (max-width: 769px) {
   header nav {
@@ -508,6 +499,35 @@ footer .footer p a:hover {
     transform: translateX(0%);
   }
 
+  footer .footer {
+    flex-direction: column;
+    padding: 35px 10px;
+    text-align: center;
+  }
+  footer .footer p {
+    margin: 0 auto 10px auto;
+    line-height: normal;
+  }
+  footer .footer p:last-child {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 481px) {
+  footer .footer p, footer .footer span, footer .footer a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 961px) {
+  .project-cards .card .card-head .icon {
+    margin-right: 20px;
+  }
+  .project-cards .card .card-head .icon img {
+    height: auto;
+    object-fit: contain;
+    max-width: 38px;
+  }
+}
+@media screen and (max-width: 769px) {
   .featured-works {
     padding: 25px 0 50px 0;
   }
@@ -591,19 +611,6 @@ footer .footer p a:hover {
   .latest-work .work-cards .card:last-child {
     margin: 0;
   }
-
-  footer .footer {
-    flex-direction: column;
-    padding: 35px 10px;
-    text-align: center;
-  }
-  footer .footer p {
-    margin: 0 auto 10px auto;
-    line-height: normal;
-  }
-  footer .footer p:last-child {
-    margin: 0 auto;
-  }
 }
 @media screen and (max-width: 481px) {
   .featured-works .works-slider .slides {
@@ -615,10 +622,6 @@ footer .footer p a:hover {
   .featured-works .works-slider .slider-indicators {
     left: 50%;
     transform: translateX(-50%);
-  }
-
-  footer .footer p, footer .footer span, footer .footer a {
-    font-size: 14px;
   }
 }
 @media screen and (max-width: 321px) {

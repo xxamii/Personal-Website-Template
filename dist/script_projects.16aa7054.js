@@ -146,6 +146,9 @@ function chooseCategory() {
     items.forEach(function (i) {
       i.style.display = 'none';
     });
+    types.forEach(function (i) {
+      i.classList.remove('active');
+    });
   }
 
   types.forEach(function (e) {
@@ -154,11 +157,14 @@ function chooseCategory() {
       var elements = document.querySelectorAll(".".concat(type));
 
       if (type == 'all') {
+        reset();
+        e.classList.add('active');
         items.forEach(function (i) {
           i.style.display = 'block';
         });
       } else {
         reset();
+        e.classList.add('active');
         elements.forEach(function (el) {
           el.style.display = 'block';
         });
@@ -201,7 +207,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52510" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50306" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

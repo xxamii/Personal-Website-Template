@@ -363,6 +363,25 @@ footer .footer p a:hover {
     transform: translateX(0%);
   }
 
+  footer .footer {
+    flex-direction: column;
+    padding: 35px 10px;
+    text-align: center;
+  }
+  footer .footer p {
+    margin: 0 auto 10px auto;
+    line-height: normal;
+  }
+  footer .footer p:last-child {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 481px) {
+  footer .footer p, footer .footer span, footer .footer a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 769px) {
   .about {
     padding-top: 50px;
   }
@@ -389,24 +408,6 @@ footer .footer p a:hover {
   }
   .staff .cards .card:last-child {
     margin: 0;
-  }
-
-  footer .footer {
-    flex-direction: column;
-    padding: 35px 10px;
-    text-align: center;
-  }
-  footer .footer p {
-    margin: 0 auto 10px auto;
-    line-height: normal;
-  }
-  footer .footer p:last-child {
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 481px) {
-  footer .footer p, footer .footer span, footer .footer a {
-    font-size: 14px;
   }
 }
 

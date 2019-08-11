@@ -8,6 +8,9 @@ function chooseCategory() {
         items.forEach((i) => {
             i.style.display = 'none';
         })
+        types.forEach(i => {
+            i.classList.remove('active');
+        })
     }
 
     types.forEach((e) => {
@@ -16,13 +19,15 @@ function chooseCategory() {
             const elements = document.querySelectorAll(`.${type}`);
 
             if(type == 'all') {
+                reset()
+                e.classList.add('active');
                 items.forEach((i) => {
                     i.style.display = 'block';
                 })
             } else {
 
                 reset()
-
+                e.classList.add('active');
                 elements.forEach((el) => {
                     el.style.display = 'block';
                 })
