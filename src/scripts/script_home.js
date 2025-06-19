@@ -1,5 +1,3 @@
-import {navbar} from './elements/navbar';
-
 function imageSlider() {
     const slides = document.querySelectorAll('.slide-picture');
     const indicators = document.querySelectorAll('.slider-indicator');
@@ -34,7 +32,6 @@ function imageSlider() {
 
 function app() {
     imageSlider()
-    navbar()
 }
 
 app()

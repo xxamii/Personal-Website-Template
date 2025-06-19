@@ -1,5 +1,3 @@
-import {navbar} from './elements/navbar';
-
 function chooseCategory() {
     const types = document.querySelectorAll('.type');
     const items = document.querySelectorAll('.item');
@@ -37,7 +35,6 @@ function chooseCategory() {
 }
 
 function app() {
-    navbar()
     chooseCategory()
 }
 

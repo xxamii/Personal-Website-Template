@@ -1,5 +1,3 @@
-import {navbar} from './elements/navbar';
-
 function blogPageTransition() {
     const pages = document.querySelectorAll('.posts-page');
     const indicators = document.querySelectorAll('.pages-indicator');
@@ -25,7 +23,6 @@ function blogPageTransition() {
 }
 
 function app() {
-    navbar()
     blogPageTransition()
 }
 

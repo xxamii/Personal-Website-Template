@@ -1,4 +1,4 @@
-export function navbar() {
+function navbar() {
     const nav = document.querySelector('.navigation');
     const hamburger = document.querySelector('.hamburger');
 
@@ -7,3 +7,9 @@ export function navbar() {
         hamburger.classList.toggle('opened');
     })
 }
+
+function app() {
+    navbar()
+}
+
+app()

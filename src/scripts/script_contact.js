@@ -1,5 +1,3 @@
-import {navbar} from './elements/navbar';
-
 function validation() {
     const inputs = document.forms[0].getElementsByTagName('input');
 
@@ -33,7 +31,6 @@ function validation() {
 }
 
 function app() {
-    navbar()
     validation()
 }
 
